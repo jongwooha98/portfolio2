@@ -13,7 +13,7 @@ function Home() {
               rel="noreferrer"
               className="home__social-icon"
             >
-              <i class="uil uil-linkedin-alt" />
+              <i className="uil uil-linkedin-alt" />
             </a>
             <a
               href="https://github.com/jongwooha98"
@@ -65,7 +65,7 @@ function Home() {
         </div>
         <div className="home__scroll">
           <a href="#about" className="home__scroll-button button--flex">
-            <i class="uil uil-angle-double-down home__scroll-arrow" />
+            <i className="uil uil-angle-double-down home__scroll-arrow" />
             <span className="home__scroll-name">scroll down</span>
           </a>
         </div>
