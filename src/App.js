@@ -2,6 +2,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
+import Qualification from './components/Qualification';
 
 import './App.scss';
 
@@ -15,6 +16,7 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Qualification />
       </main>
     </>
   );
