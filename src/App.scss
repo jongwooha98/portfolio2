@@ -79,3 +79,31 @@ img {
   z-index: $z-fixed;
   background-color: $body-color;
 }
+
+.button {
+  display: inline-block;
+  background-color: $first-color;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: $font-medium;
+
+  &:hover {
+    background-color: $first-color-alt;
+  }
+}
+
+.button__icon {
+  font-size: 1.2rem;
+  margin-left: $mb-0-5;
+  transition: 0.3s;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.active-link {
+  color: $first-color;
+}
