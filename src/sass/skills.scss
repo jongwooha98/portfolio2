@@ -94,3 +94,15 @@
     transform: rotate(-180deg);
   }
 }
+
+@media screen and (max-width: 350px) {
+  .skills__title {
+    font-size: $normal-font-size;
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

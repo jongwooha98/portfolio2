@@ -45,7 +45,7 @@ function Contact() {
           </div>
           <div>
             <a href="#" className="button button--flex">
-              Send Message <i className="uil uil-message contact__icon" />
+              Send Message <i className="uil uil-message button__icon" />
             </a>
           </div>
         </form>

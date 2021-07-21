@@ -9,11 +9,11 @@
   margin-bottom: $mb-2;
 }
 
-.contact__icon {
-  font-size: 2rem;
-  color: $first-color;
-  margin-right: $mb-0-75;
-}
+// .contact__icon {
+//   font-size: 1.2rem;
+//   // color: $first-color;
+//   margin-left: $mb-0-75;
+// }
 
 .contact__title {
   font-size: $h3-font-size;
@@ -44,4 +44,19 @@
   border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
+}
+@media screen and (min-width: 568px) {
+  .contact__container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact__form {
+    width: 460px;
+  }
+  .contact__inputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
