@@ -9,7 +9,56 @@ import Footer from './components/Footer';
 
 import './App.scss';
 
+// import { useEffect } from 'react';
+
 function App() {
+  function scrollHeader() {
+    const nav = document.getElementById('header');
+    this.scrollY >= 80
+      ? nav.classList.add('scroll-header')
+      : nav.classList.remove('scroll-header');
+  }
+
+  window.addEventListener('scroll', scrollHeader);
+
+  function scrollUp() {
+    const scrollUp = document.getElementById('scroll-up');
+    this.scrollY >= 560
+      ? scrollUp.classList.add('show-scroll')
+      : scrollUp.classList.remove('show-scroll');
+  }
+  window.addEventListener('scroll', scrollUp);
+
+  // const body = document.body;
+
+  // const themeButton = document.getElementById('theme-button');
+  // const darkTheme = 'dark-theme';
+  // const iconTheme = 'uil-sun';
+
+  // const selectedTheme = localStorage.getItem('selected-theme');
+  // const selectedIcon = localStorage.getItem('selected-icon');
+
+  // const getCurrntTheme = () =>
+  //   body.classList.contains(darkTheme) ? 'dark' : 'light';
+  // const getCurrentIcon = () =>
+  //   themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun';
+
+  // if (selectedTheme) {
+  //   body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+  //   themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](
+  //     iconTheme
+  //   );
+  // }
+
+  // themeButton.addEventListener('click', () => {
+  //   document.body.classList.toggle(darkTheme);
+  //   themeButton.classList.toggle(iconTheme);
+
+  //   localStorage.setItem('selected-theme', getCurrntTheme());
+  //   localStorage.setItem('selected-icon', getCurrentIcon());
+  // });
+  // console.log(selectedTheme);
+
   return (
     <>
       <header className="header" id="header">
@@ -26,6 +75,9 @@ function App() {
       <footer className="footer">
         <Footer />
       </footer>
+      <a href="#" className="scroll-up" id="scroll-up">
+        <i className="uil uil-arrow-up scroll-up__icon" />
+      </a>
     </>
   );
 }
