@@ -10,16 +10,47 @@ function Nav() {
     navMenu.classList.remove('show-menu');
   };
 
+  function scrollActive() {
+    const sections = document.querySelectorAll('section[id]');
+
+    sections.forEach((current) => {
+      const scrollY = window.pageYOffset;
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop - 50;
+      let sectionId = current.getAttribute('id');
+      let link = document.querySelector(
+        '.nav__item a[href*=' + sectionId + ']'
+      );
+
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        link.classList.add('active-link');
+      } else {
+        link.classList.remove('active-link');
+      }
+    });
+  }
+  window.addEventListener('scroll', scrollActive);
+
+  //
+  // function darkModeToggle() {
+  //   const element = document.body;
+  //   element.classList.toggle('dark-mode');
+  // }
+  //
   return (
     <nav className="nav container">
       <a href="#" className="nav__logo">
-        Jong
+        JongWoo
       </a>
 
       <div className="nav__menu" id="nav-menu">
         <ul className="nav__list grid">
           <li className="nav__item">
-            <a href="#home" className="nav__link" onClick={handleClose}>
+            <a
+              href="#home"
+              className="nav__link active-link"
+              onClick={handleClose}
+            >
               <i className="uil uil-estate nav__icon" /> Home
             </a>
           </li>
@@ -34,13 +65,17 @@ function Nav() {
             </a>
           </li>
           <li className="nav__item">
-            <a href="#services" className="nav__link" onClick={handleClose}>
-              <i className="uil uil-briefcase-alt nav__icon" /> Services
+            <a
+              href="#qualification"
+              className="nav__link"
+              onClick={handleClose}
+            >
+              <i className="uil uil-briefcase-alt nav__icon" /> Qualification
             </a>
           </li>
           <li className="nav__item">
-            <a href="#projects" className="nav__link" onClick={handleClose}>
-              <i className="uil uil-scenery nav__icon" /> Projects
+            <a href="#portfolio" className="nav__link" onClick={handleClose}>
+              <i className="uil uil-scenery nav__icon" /> Portfolio
             </a>
           </li>
           <li className="nav__item">
@@ -56,6 +91,9 @@ function Nav() {
         />
       </div>
       <div className="nav__btns">
+        {/* Dark mode */}
+        <i className="uil uil-moon change-theme btn-toggle" id="theme-button" />
+
         <div className="nav__toggle" id="nav-toggle" onClick={handleOpen}>
           <i className="uil uil-apps" />
         </div>
