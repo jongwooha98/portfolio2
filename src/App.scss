@@ -78,6 +78,7 @@ img {
   background-color: $body-color;
 }
 
+// button
 .button {
   display: inline-block;
   background-color: $first-color;
@@ -167,8 +168,14 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
   .header,
   .main {
     padding: 0;
+  }
+  .scroll-up {
+    right: 3.5rem;
   }
 }
