@@ -1,5 +1,5 @@
 @import './sass/_variables.scss';
-
+// @import '*';
 * {
   box-sizing: border-box;
   padding: 0;
@@ -83,12 +83,13 @@ img {
   display: inline-block;
   background-color: $first-color;
   color: #fff;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
   border-radius: 0.5rem;
   font-weight: $font-medium;
 
   &:hover {
     background-color: $first-color-alt;
+    cursor: pointer;
   }
 }
 

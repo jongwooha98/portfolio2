@@ -1,13 +1,14 @@
 import placeholder from '../assets/images/birthday-reminder.png';
 
-import React, { useRef, useState } from 'react';
+import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/swiper.min.css';
 import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/components/navigation/navigation.min.css';
-import '../sass/portfolio.scss';
+import '../sass/_portfolio.scss';
 
 // import Swiper core and required modules
 import SwiperCore, { Pagination, Navigation } from 'swiper/core';
@@ -19,7 +20,7 @@ function Portfolio() {
     <section className="portfolio section" id="portfolio">
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Most recent work</span>
-      <div className="">
+      <div>
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -94,6 +95,13 @@ function Portfolio() {
             </div>
           </SwiperSlide>
         </Swiper>
+      </div>
+      <div className="to-projects container">
+        <h3>Check out all other projects</h3>
+        <Link to="/projects" className="button button--flex">
+          Explore Projects
+          <i class="uil uil-plane-fly button__icon" />
+        </Link>
       </div>
     </section>
   );

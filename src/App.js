@@ -1,9 +1,12 @@
+import React from 'react';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Qualification from './components/Qualification';
 import Portfolio from './components/Portfolio';
+import Projects from './components/projects/Projects.js';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -61,23 +64,30 @@ function App() {
 
   return (
     <>
-      <header className="header" id="header">
-        <Nav />
-      </header>
-      <main className="main">
-        <Home />
-        <About />
-        <Skills />
-        <Qualification />
-        <Portfolio />
-        <Contact />
-      </main>
-      <footer className="footer">
-        <Footer />
-      </footer>
-      <a href="#" className="scroll-up" id="scroll-up">
-        <i className="uil uil-arrow-up scroll-up__icon" />
-      </a>
+      <Router>
+        <header className="header" id="header">
+          <Nav />
+        </header>
+        <Switch>
+          <main className="main">
+            <Route exact path="/" component={Home}>
+              <Home />
+              <About />
+              <Skills />
+              <Qualification />
+              <Portfolio />
+              <Contact />
+            </Route>
+            <Route exact path="/projects" component={Projects} />
+          </main>
+        </Switch>
+        <a href="#" className="scroll-up" id="scroll-up">
+          <i className="uil uil-arrow-up scroll-up__icon" />
+        </a>
+        <footer className="footer">
+          <Footer />
+        </footer>
+      </Router>
     </>
   );
 }

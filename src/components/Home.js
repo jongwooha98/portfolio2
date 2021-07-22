@@ -1,5 +1,6 @@
-import '../sass/home.scss';
-import { ReactComponent as Blob } from '../assets/images/blob.svg';
+import '../sass/_home.scss';
+import { HashLink as Link } from 'react-router-hash-link';
+
 import portrait from '../assets/images/portrait.png';
 function Home() {
   return (
@@ -58,16 +59,22 @@ function Home() {
               High level experience in web design and development knowledge,
               producing quality work.
             </p>
-            <a href="#contact" className="button button--flex">
-              Contact Me <i className="uil uil-message button__icon" />
-            </a>
+            <div className="home__links">
+              <Link to="/#contact" className="button button--flex">
+                Contact Me <i className="uil uil-message button__icon" />
+              </Link>
+              <Link to="/projects" className="button button--flex">
+                Explore Projects
+                <i class="uil uil-plane-fly button__icon" />
+              </Link>
+            </div>
           </div>
         </div>
         <div className="home__scroll">
-          <a href="#about" className="home__scroll-button button--flex">
+          <Link to="/#about" className="home__scroll-button button--flex">
             <i className="uil uil-angle-double-down home__scroll-arrow" />
             <span className="home__scroll-name">scroll down</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

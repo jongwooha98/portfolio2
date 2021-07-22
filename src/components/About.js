@@ -1,4 +1,4 @@
-import '../sass/about.scss';
+import '../sass/_about.scss';
 import placeholder from '../assets/images/portrait.jpeg';
 
 function About() {

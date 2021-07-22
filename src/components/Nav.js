@@ -1,4 +1,6 @@
-import '../sass/nav.scss';
+import { HashLink as Link } from 'react-router-hash-link';
+
+import '../sass/_nav.scss';
 
 function Nav() {
   const handleOpen = () => {
@@ -13,13 +15,13 @@ function Nav() {
   function scrollActive() {
     const sections = document.querySelectorAll('section[id]');
 
-    sections.forEach((current) => {
+    sections.forEach(current => {
       const scrollY = window.pageYOffset;
       const sectionHeight = current.offsetHeight;
       const sectionTop = current.offsetTop - 50;
       let sectionId = current.getAttribute('id');
       let link = document.querySelector(
-        '.nav__item a[href*=' + sectionId + ']'
+        '.nav__item a[href*=' + sectionId + ']',
       );
 
       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -39,49 +41,54 @@ function Nav() {
   //
   return (
     <nav className="nav container">
-      <a href="#" className="nav__logo">
+      <Link to="/#" className="nav__logo">
         JongWoo
-      </a>
+      </Link>
 
       <div className="nav__menu" id="nav-menu">
         <ul className="nav__list grid">
           <li className="nav__item">
-            <a
-              href="#home"
+            <Link
+              to="/#home"
               className="nav__link active-link"
               onClick={handleClose}
             >
               <i className="uil uil-estate nav__icon" /> Home
-            </a>
+            </Link>
           </li>
           <li className="nav__item">
-            <a href="#about" className="nav__link" onClick={handleClose}>
+            <Link to="/#about" className="nav__link" onClick={handleClose}>
               <i className="uil uil-user nav__icon" /> About
-            </a>
+            </Link>
           </li>
           <li className="nav__item">
-            <a href="#skills" className="nav__link" onClick={handleClose}>
+            <Link to="/#skills" className="nav__link" onClick={handleClose}>
               <i className="uil uil-file-alt nav__icon" /> Skills
-            </a>
+            </Link>
           </li>
           <li className="nav__item">
-            <a
-              href="#qualification"
+            <Link
+              to="/#qualification"
               className="nav__link"
               onClick={handleClose}
             >
               <i className="uil uil-briefcase-alt nav__icon" /> Qualification
-            </a>
+            </Link>
           </li>
           <li className="nav__item">
-            <a href="#portfolio" className="nav__link" onClick={handleClose}>
+            <Link to="/#portfolio" className="nav__link" onClick={handleClose}>
               <i className="uil uil-scenery nav__icon" /> Portfolio
-            </a>
+            </Link>
           </li>
           <li className="nav__item">
-            <a href="#contact" className="nav__link" onClick={handleClose}>
+            <Link to="/projects" className="nav__link" onClick={handleClose}>
+              <i className="uil uil-scenery nav__icon" /> Projects
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link to="/#contact" className="nav__link" onClick={handleClose}>
               <i className="uil uil-message nav__icon" /> Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <i

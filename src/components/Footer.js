@@ -1,4 +1,5 @@
-import '../sass/footer.scss';
+import '../sass/_footer.scss';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Footer() {
   return (
@@ -11,24 +12,24 @@ function Footer() {
 
         <ul className="footer__links">
           <li>
-            <a href="#about" className="footer__link">
+            <Link to="/#about" className="footer__link">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#skills" className="footer__link">
+            <Link to="/#skills" className="footer__link">
               Skills
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#portfolio" className="footer__link">
-              Portfolio
-            </a>
+            <Link to="/projects" className="footer__link">
+              Projects
+            </Link>
           </li>
           <li>
-            <a href="#contact" className="footer__link">
+            <Link to="/#contact" className="footer__link">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 

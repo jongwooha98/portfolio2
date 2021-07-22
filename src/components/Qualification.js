@@ -1,4 +1,4 @@
-import '../sass/qualification.scss';
+import '../sass/_qualification.scss';
 import { useEffect } from 'react';
 
 function Qualification() {
@@ -7,19 +7,19 @@ function Qualification() {
     const tabContents = document.querySelectorAll('[data-content]');
     // console.log(tabs, tabContents);
 
-    tabs.forEach((tab) => {
+    tabs.forEach(tab => {
       // console.log(tab);
       tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.target);
         // console.log(target);
 
-        tabContents.forEach((tabContent) => {
+        tabContents.forEach(tabContent => {
           // console.log(tabContent);
           tabContent.classList.remove('qualification__active');
         });
         target.classList.add('qualification__active');
 
-        tabs.forEach((tab) => {
+        tabs.forEach(tab => {
           tab.classList.remove('qualification__active');
         });
         tab.classList.add('qualification__active');
@@ -59,12 +59,12 @@ function Qualification() {
             {/* qualification 1 */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Electrical Engineer</h3>
+                <h3 className="qualification__title">Penn State University</h3>
                 <span className="qualification__subtitle">
-                  Penn State University
+                  Bachelor of Science in Electrical Engineering
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt" /> 2016 - 2020
+                  <i className="uil uil-calendar-alt" /> Aug 2016 - May 2020
                 </div>
               </div>
 
@@ -83,25 +83,84 @@ function Qualification() {
               </div>
 
               <div>
-                <h3 className="qualification__title">Web Design</h3>
-                <span className="qualification__subtitle">Korea - korea</span>
+                <h3 className="qualification__title">Yonsei University</h3>
+                <span className="qualification__subtitle">Study Abroad</span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt" /> 2000 -2000
+                  <i className="uil uil-calendar-alt" /> Mar 2018 - Jun 2018
                 </div>
               </div>
             </div>
             {/* qualification 3 */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Freelancer</h3>
+                <h3 className="qualification__title">
+                  York Catholic High School
+                </h3>
                 <span className="qualification__subtitle">
-                  Penn State University
+                  High School Diploma
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt" /> 2000 - 2000
+                  <i className="uil uil-calendar-alt" /> Aug 2012 - May 2016
                 </div>
               </div>
 
+              <div>
+                <span className="qualification__rounder"></span>
+              </div>
+            </div>
+          </div>
+
+          {/* experience */}
+          <div className="qualification__content" data-content id="experience">
+            {/* qualification 1 */}
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">Lab Assistant</h3>
+                <span className="qualification__subtitle">
+                  Penn State College of Engineering
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt" /> Jan 2020 - May 2020
+                </div>
+              </div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+            {/* qualification 2 */}
+            <div className="qualification__data">
+              <div></div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 className="qualification__title">Resident Assistant</h3>
+                <span className="qualification__subtitle">
+                  Penn State Residence Life
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt" /> Aug 2019 - May 2020
+                </div>
+              </div>
+            </div>
+            {/* qualification 3 */}
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">
+                  Electrical Subsystems Lead
+                </h3>
+                <span className="qualification__subtitle">
+                  Penn State Unmanned Aerial Systems
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt" /> Aug 2019 - May 2020
+                </div>
+              </div>
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
@@ -113,30 +172,27 @@ function Qualification() {
 
               <div>
                 <span className="qualification__rounder"></span>
-                {/* <span className="qualification__line"></span> */}
+                <span className="qualification__line"></span>
               </div>
-
               <div>
-                <h3 className="qualification__title">BS in EE</h3>
+                <h3 className="qualification__title">Electrical Team Member</h3>
                 <span className="qualification__subtitle">
-                  Penn State University
+                  Penn State Unmanned Aerial Systems
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt" /> 2000 - 2000
+                  <i className="uil uil-calendar-alt" /> Sep 2018 - Aug 2019
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* experience */}
-          <div className="qualification__content" data-content id="experience">
-            {/* qualification 1 */}
+            {/* qualification 5 */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Computer Engineer</h3>
-                <span className="qualification__subtitle">Apple</span>
+                <h3 className="qualification__title">Food Service Worker</h3>
+                <span className="qualification__subtitle">
+                  Penn State Food Services
+                </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt" /> 2016 - 2020
+                  <i className="uil uil-calendar-alt" /> Sep 2017 - Dec 2017
                 </div>
               </div>
 
@@ -145,7 +201,7 @@ function Qualification() {
                 <span className="qualification__line"></span>
               </div>
             </div>
-            {/* qualification 2 */}
+            {/* qualification 6 */}
             <div className="qualification__data">
               <div></div>
 
@@ -153,28 +209,28 @@ function Qualification() {
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-
               <div>
-                <h3 className="qualification__title">Frontend Developer</h3>
-                <span className="qualification__subtitle">Toss</span>
+                <h3 className="qualification__title">Private Tutor</h3>
+                <span className="qualification__subtitle">Self-employed</span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt" /> 2000 -2000
+                  <i className="uil uil-calendar-alt" /> May 2017 - Aug 2017
                 </div>
               </div>
             </div>
-            {/* qualification 3 */}
+            {/* qualification 7 */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">UI Designer</h3>
-                <span className="qualification__subtitle">Adobe </span>
+                <h3 className="qualification__title">
+                  Sponsorship Team Member
+                </h3>
+                <span className="qualification__subtitle">Hack PSU</span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt" /> 2000 - 2000
+                  <i className="uil uil-calendar-alt" /> Jan 2017 - Apr 2017
                 </div>
               </div>
 
               <div>
                 <span className="qualification__rounder"></span>
-                {/* <span className="qualification__line"></span> */}
               </div>
             </div>
           </div>

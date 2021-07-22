@@ -1,4 +1,4 @@
-import '../sass/skills.scss';
+import '../sass/_skills.scss';
 import { useEffect } from 'react';
 
 function Skills() {
@@ -15,7 +15,7 @@ function Skills() {
         this.parentNode.className = 'skills__content skills__open';
       }
     }
-    skillsHeader.forEach((el) => {
+    skillsHeader.forEach(el => {
       el.addEventListener('click', toggleSkills);
     });
   });
