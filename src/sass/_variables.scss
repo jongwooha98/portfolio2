@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-$header-height: 3rem;
-
-/*========== Colors ==========*/
-$hue-color: 235;
-
 /* HSL color mode */
+$hue-color: 235;
 $first-color: hsl($hue-color, 69%, 61%);
 $first-color-second: hsl($hue-color, 69%, 61%);
 $first-color-alt: hsl($hue-color, 57%, 53%);
@@ -42,6 +38,7 @@ $mb-1-5: 1.5rem;
 $mb-2: 2rem;
 $mb-2-5: 2.5rem;
 $mb-3: 3rem;
+$header-height: 3rem;
 
 // z-index
 $z-tooltip: 10;
