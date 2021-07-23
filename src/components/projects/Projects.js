@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 import './_projects.scss';
 
 import projectsData from './projectsData.js';
 
-const items = projectsData.reverse(); // reversed data, so latest item is shown first.
+const items = projectsData.slice().reverse(); // reversed data, so latest item is shown first.
 
 const allCategories = ['All'].concat([
   ...new Set(items.map(item => item.category)),
@@ -42,7 +43,7 @@ function Menu({ menuItem }) {
                   rel="noreferrer"
                   className="button button--flex item__links__button"
                 >
-                  Project Link
+                  Demo
                   <i class="uil uil-external-link-alt button__icon" />
                 </a>
               ) : null}
@@ -78,6 +79,10 @@ function Projects() {
     const filteredData = items.filter(item => item.category === button);
     setMenuItem(filteredData);
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
   return (
     <section className="projects section">

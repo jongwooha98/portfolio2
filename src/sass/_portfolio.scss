@@ -6,20 +6,27 @@
 }
 .portfolio__content {
   padding: 0 1.5rem;
+  align-self: center;
 }
 
 .portfolio__img {
   width: 265px;
   border-radius: 0.5rem;
   justify-self: center;
+  align-self: center;
 }
 
 .portfolio__title {
   font-size: $h3-font-size;
   margin-bottom: $mb-0-5;
+  align-self: start;
 }
 .portfolio__description {
   margin-bottom: $mb-0-75;
+}
+.portfolio__button {
+  align-self: center;
+  justify-self: center;
 }
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
