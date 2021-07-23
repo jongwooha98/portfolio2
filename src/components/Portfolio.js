@@ -28,6 +28,7 @@ function Project({ latestProject }) {
       <img src={latestProject.image} alt="" className="portfolio__img" />
       <div className="portfolio__data">
         <h3 className="portfolio__title">{latestProject.title}</h3>
+        <span className="portfolio__category">{latestProject.category}</span>
         <p className="portfolio__description">{latestProject.description}</p>
         <a
           href={latestProject.href}
@@ -69,8 +70,8 @@ function Portfolio() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="to-projects container">
-        <h3>Check out all other projects</h3>
+      <div className="to-projects">
+        <h3>Check out other projects</h3>
         <Link to="/projects" className="button button--flex">
           Explore Projects
           <i class="uil uil-plane-fly button__icon" />

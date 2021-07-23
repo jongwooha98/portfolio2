@@ -3,20 +3,21 @@ import img1 from './assets/images/dmm.png';
 import img2 from './assets/images/adc.png';
 import img3 from './assets/images/vr driving.jpeg';
 import img4 from './assets/images/optical theremin.png';
-import img5 from './assets/images/adc circuit.png';
-import img6 from './assets/images/hydrophobic aircraft.png';
-import img7 from './assets/images/downhole hydraulic.png';
-import img8 from './assets/images/drum-machine.png';
-import img9 from './assets/images/random-quote-generator.png';
-import img10 from './assets/images/tic-tac-toe.png';
-import img11 from './assets/images/pomodoro.png';
-import img12 from './assets/images/product-landing-page.png';
-import img13 from './assets/images/new heim.png';
-import img14 from './assets/images/simon-game.png';
-import img15 from './assets/images/memory-game.png';
-import img16 from './assets/images/whack-a-diglett.png';
-import img17 from './assets/images/elon-jump.png';
-import img18 from './assets/images/birthday-reminder.png';
+import img5 from './assets/images/remote-keyless-entry-system.png';
+import img6 from './assets/images/adc circuit.png';
+import img7 from './assets/images/hydrophobic aircraft.png';
+import img8 from './assets/images/downhole hydraulic.png';
+import img9 from './assets/images/drum-machine.png';
+import img10 from './assets/images/random-quote-generator.png';
+import img11 from './assets/images/tic-tac-toe.png';
+import img12 from './assets/images/pomodoro.png';
+import img13 from './assets/images/product-landing-page.png';
+import img14 from './assets/images/new heim.png';
+import img15 from './assets/images/simon-game.png';
+import img16 from './assets/images/memory-game.png';
+import img17 from './assets/images/whack-a-diglett.png';
+import img18 from './assets/images/elon-jump.png';
+import img19 from './assets/images/birthday-reminder.png';
 
 // pdf
 import pdf1 from './assets/pdf/Instruction Set-DMM.pdf';
@@ -72,6 +73,16 @@ export default [
   {
     id: 5,
     image: img5,
+    title: 'Remote Keyless Entry System',
+    category: 'Electrical Engineering',
+    description:
+      'The project was to realize a finite state machine for implementing a remote keyless entry system in four different methods.',
+    href: 'https://github.com/jongwooha98/remote-keyless-entry-system',
+    pdf: null,
+  },
+  {
+    id: 6,
+    image: img6,
     title: 'Embedded Systems - Analog to Digital Converter',
     category: 'Electrical Engineering',
     description:
@@ -80,8 +91,8 @@ export default [
     pdf: pdf5,
   },
   {
-    id: 6,
-    image: img6,
+    id: 7,
+    image: img7,
     title: 'Hydrophobic Aircraft Paint to Reduce the Need for Deicing Fluid',
     category: 'Writing Samples',
     description:
@@ -91,8 +102,8 @@ export default [
   },
 
   {
-    id: 7,
-    image: img7,
+    id: 8,
+    image: img8,
     title: 'Downhole Electro-Hydraulic Control System',
     category: 'Electrical Engineering',
     description:
@@ -102,8 +113,8 @@ export default [
     misc: 'sponsored by Schlumberger',
   },
   {
-    id: 8,
-    image: img8,
+    id: 9,
+    image: img9,
     title: 'Drum Machine',
     category: 'Web Development',
     description: '',
@@ -111,8 +122,8 @@ export default [
     pdf: null,
   },
   {
-    id: 9,
-    image: img9,
+    id: 10,
+    image: img10,
     title: 'Random Quote Generator',
     category: 'Web Development',
     description: '',
@@ -120,8 +131,8 @@ export default [
     pdf: null,
   },
   {
-    id: 10,
-    image: img10,
+    id: 11,
+    image: img11,
     title: 'Tic Tac Toe',
     category: 'Minigame',
     description: '',
@@ -129,8 +140,8 @@ export default [
     pdf: null,
   },
   {
-    id: 11,
-    image: img11,
+    id: 12,
+    image: img12,
     title: 'Pomodoro Timer',
     category: 'Web Development',
     description: '',
@@ -138,8 +149,8 @@ export default [
     pdf: null,
   },
   {
-    id: 12,
-    image: img12,
+    id: 13,
+    image: img13,
     title: 'Product Landing Page',
     category: 'Web Development',
     description: '',
@@ -147,8 +158,8 @@ export default [
     pdf: null,
   },
   {
-    id: 13,
-    image: img13,
+    id: 14,
+    image: img14,
     title: 'New Heim Project',
     category: 'Web Development',
     description: '',
@@ -156,8 +167,8 @@ export default [
     pdf: null,
   },
   {
-    id: 14,
-    image: img14,
+    id: 15,
+    image: img15,
     title: 'Simon Game',
     category: 'Minigame',
     description: '',
@@ -165,8 +176,8 @@ export default [
     pdf: null,
   },
   {
-    id: 15,
-    image: img15,
+    id: 16,
+    image: img16,
     title: 'Memory Game',
     category: 'Minigame',
     description: '',
@@ -174,29 +185,32 @@ export default [
     pdf: null,
   },
   {
-    id: 16,
-    image: img16,
-    title: 'Whack-A-Diglett',
-    category: 'Minigame',
-    description: '',
-    href: 'https://jongwooha98.github.io/whack-a-diglett',
-    pdf: null,
-  },
-  {
     id: 17,
     image: img17,
-    title: 'Elon Jump',
+    title: 'Whack-A-Diglett',
     category: 'Minigame',
-    description: '',
-    href: 'https://jongwooha98.github.io/elon-jump',
+    description:
+      'Based on the game: Whac-A-Mole. More functions will be added and the design will be improved later.',
+    href: 'https://jongwooha98.github.io/whack-a-diglett',
     pdf: null,
   },
   {
     id: 18,
     image: img18,
+    title: 'Elon Jump',
+    category: 'Minigame',
+    description:
+      'Based on the game: Doodle Jump. More functions will be added and the design will be improved later.',
+    href: 'https://jongwooha98.github.io/elon-jump',
+    pdf: null,
+  },
+  {
+    id: 19,
+    image: img19,
     title: 'Birthday Reminder',
     category: 'Web Development',
-    description: '',
+    description:
+      'People data are randomly generated using Random User Generator(randomuser.me), A free,open-source API for generating random user data. Like Lorem Ipsum, but for people.',
     href: 'https://jongwooha98.github.io/birthday-reminder',
     pdf: null,
   },
