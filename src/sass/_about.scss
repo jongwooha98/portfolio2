@@ -4,11 +4,11 @@
   width: 200px;
   border-radius: 0.5rem;
   justify-self: center;
-  align-self: center;
+  // align-self: center;
 }
 
 .about__description {
-  text-align: center;
+  text-align: initial;
   margin-bottom: $mb-2-5;
 }
 
