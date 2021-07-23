@@ -1,5 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
@@ -81,9 +83,9 @@ function App() {
             <Route exact path="/projects" component={Projects} />
           </main>
         </Switch>
-        <a href="#" className="scroll-up" id="scroll-up">
+        <Link to="#" className="scroll-up" id="scroll-up">
           <i className="uil uil-arrow-up scroll-up__icon" />
-        </a>
+        </Link>
         <footer className="footer">
           <Footer />
         </footer>
