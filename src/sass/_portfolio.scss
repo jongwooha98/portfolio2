@@ -21,6 +21,9 @@
   margin-bottom: $mb-0-5;
   align-self: start;
 }
+.portfolio__category {
+  color: $text-color-light;
+}
 .portfolio__description {
   margin-bottom: $mb-0-75;
 }
@@ -56,22 +59,19 @@
   outline: none;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  // bottom: -2.5rem;
-}
-
-// .swiper-portfolio-icon {
-//   font-size: 2rem;
-//   color: $first-color;
-// }
-
 .to-projects {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0 1rem;
+  justify-self: center;
+  align-self: center;
+  width: fit-content;
+  padding: min(4rem, 10%) min(10rem, 15%);
+  margin: 2rem auto 1rem;
   row-gap: 1rem;
+  border-radius: 1.5rem;
+  background-color: hsl($hue-color, 70%, 96%);
 }
 @media screen and (min-width: 568px) {
   .portfolio__content {

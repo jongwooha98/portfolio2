@@ -3,8 +3,7 @@
 $header-height: 3rem;
 
 /*========== Colors ==========*/
-/* Change favorite color */
-$hue-color: 270; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+$hue-color: 235;
 
 /* HSL color mode */
 $first-color: hsl($hue-color, 69%, 61%);
@@ -18,10 +17,10 @@ $input-color: hsl($hue-color, 70%, 96%);
 $body-color: hsl($hue-color, 60%, 99%);
 $container-color: #fff;
 
-/*========== Font and typography ==========*/
+// font & typography
 $body-font: 'Poppins', sans-serif;
 
-/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+// html font-size = 16px
 $big-font-size: 2rem;
 $h1-font-size: 1.5rem;
 $h2-font-size: 1.25rem;
@@ -30,12 +29,11 @@ $normal-font-size: 0.983rem;
 $small-font-size: 0.813rem;
 $smaller-font-size: 0.75rem;
 
-/*========== Font weight ==========*/
+// font-weight
 $font-medium: 500;
 $font-semi-bold: 600;
 
-/*========== Margenes Bottom ==========*/
-/* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+// margins
 $mb-0-25: 0.25rem;
 $mb-0-5: 0.5rem;
 $mb-0-75: 0.75rem;
@@ -45,7 +43,7 @@ $mb-2: 2rem;
 $mb-2-5: 2.5rem;
 $mb-3: 3rem;
 
-/*========== z index ==========*/
+// z-index
 $z-tooltip: 10;
 $z-fixed: 100;
 $z-modal: 1000;
