@@ -1,5 +1,4 @@
 import React from 'react';
-import placeholder from '../assets/images/birthday-reminder.png';
 
 import { HashLink as Link } from 'react-router-hash-link';
 // Import Swiper React components
@@ -74,7 +73,7 @@ function Portfolio() {
         <h3>Check out other projects</h3>
         <Link to="/projects" className="button button--flex">
           Explore Projects
-          <i class="uil uil-plane-fly button__icon" />
+          <i className="uil uil-plane-fly button__icon" />
         </Link>
       </div>
     </section>

@@ -40,7 +40,7 @@ function Footer() {
             rel="noreferrer"
             className="footer__social"
           >
-            <i class="uil uil-linkedin-alt"></i>
+            <i className="uil uil-linkedin-alt"></i>
           </a>
           <a
             href="https://github.com/jongwooha98"
@@ -48,7 +48,7 @@ function Footer() {
             rel="noreferrer"
             className="footer__social"
           >
-            <i class="uil uil-github-alt"></i>
+            <i className="uil uil-github-alt"></i>
           </a>
         </div>
       </div>

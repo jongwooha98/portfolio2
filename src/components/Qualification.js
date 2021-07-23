@@ -139,9 +139,11 @@ function Qualification() {
               </div>
 
               <div>
-                <h3 className="qualification__title">Resident Assistant</h3>
+                <h3 className="qualification__title">
+                  Electrical Subsystems Prototype Team Lead
+                </h3>
                 <span className="qualification__subtitle">
-                  Penn State Residence Life
+                  Penn State Unmanned Aerial Systems
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt" /> Aug 2019 - May 2020
@@ -151,11 +153,9 @@ function Qualification() {
             {/* qualification 3 */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">
-                  Electrical Subsystems Lead
-                </h3>
+                <h3 className="qualification__title">Resident Assistant</h3>
                 <span className="qualification__subtitle">
-                  Penn State Unmanned Aerial Systems
+                  Penn State Residence Life
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt" /> Aug 2019 - May 2020

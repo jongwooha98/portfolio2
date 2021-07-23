@@ -82,7 +82,7 @@ function Nav() {
           </li>
           <li className="nav__item">
             <Link to="/projects" className="nav__link" onClick={handleClose}>
-              <i className="uil uil-scenery nav__icon" /> Projects
+              <i className="uil uil-list-ol-alt nav__icon" /> Projects
             </Link>
           </li>
           <li className="nav__item">
@@ -99,7 +99,7 @@ function Nav() {
       </div>
       <div className="nav__btns">
         {/* Dark mode */}
-        <i className="uil uil-moon change-theme btn-toggle" id="theme-button" />
+        {/* <i className="uil uil-moon change-theme btn-toggle" id="theme-button" /> */}
 
         <div className="nav__toggle" id="nav-toggle" onClick={handleOpen}>
           <i className="uil uil-apps" />

@@ -53,11 +53,11 @@ function Home() {
             </svg>
           </div>
           <div className="home__data">
-            <h1 className="home__title">Hi, I'm JongWoo</h1>
-            <h3 className="home__subtitle">Frontend developer</h3>
+            <h1 className="home__title">JongWoo Ha</h1>
+            <h3 className="home__subtitle">Frontend Developer</h3>
             <p className="home__description">
-              High level experience in web design and development knowledge,
-              producing quality work.
+              A self-taught frontend developer who constantly seeks for
+              improvements to produce quality work.
             </p>
             <div className="home__links">
               <Link to="/#contact" className="button button--flex">
@@ -65,7 +65,7 @@ function Home() {
               </Link>
               <Link to="/projects" className="button button--flex">
                 Explore Projects
-                <i class="uil uil-plane-fly button__icon" />
+                <i className="uil uil-plane-fly button__icon" />
               </Link>
             </div>
           </div>

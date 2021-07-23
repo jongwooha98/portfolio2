@@ -9,11 +9,12 @@
   margin-bottom: $mb-2;
 }
 
-// .contact__icon {
-//   font-size: 1.2rem;
-//   // color: $first-color;
-//   margin-left: $mb-0-75;
-// }
+.contact__icon {
+  font-size: 1.2rem;
+  color: $first-color;
+  margin-left: $mb-0-75;
+  margin-right: $mb-0-5;
+}
 
 .contact__title {
   font-size: $h3-font-size;
