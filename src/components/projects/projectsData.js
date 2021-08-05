@@ -18,6 +18,7 @@ import img16 from './assets/images/memory-game.png';
 import img17 from './assets/images/whack-a-diglett.png';
 import img18 from './assets/images/elon-jump.png';
 import img19 from './assets/images/birthday-reminder.png';
+import img20 from './assets/images/photo-gallery.png';
 
 // pdf
 import pdf1 from './assets/pdf/Instruction Set-DMM.pdf';
@@ -212,6 +213,16 @@ export default [
     description:
       'People data are randomly generated using Random User Generator(randomuser.me), A free,open-source API for generating random user data. Like Lorem Ipsum, but for people.',
     href: 'https://jongwooha98.github.io/birthday-reminder',
+    pdf: null,
+  },
+  {
+    id: 20,
+    image: img20,
+    title: 'Photo Gallery',
+    category: 'Web Development',
+    description:
+      'Anybody can upload their favorite photos! Images are responsively resized to have a pretty and neat display on the viewport of a current device of a user.',
+    href: 'https://photo-gallery-4caa0.web.app',
     pdf: null,
   },
 ];
