@@ -19,7 +19,7 @@ import img17 from './assets/images/whack-a-diglett.png';
 import img18 from './assets/images/elon-jump.png';
 import img19 from './assets/images/birthday-reminder.png';
 import img20 from './assets/images/photo-gallery.png';
-
+import img21 from './assets/images/stock-portfolio-app.png';
 // pdf
 import pdf1 from './assets/pdf/Instruction Set-DMM.pdf';
 import pdf2 from './assets/pdf/Technical Description-ADC.pdf';
@@ -223,6 +223,15 @@ export default [
     description:
       'Anybody can upload their favorite photos! Images are responsively resized to have a pretty and neat display on the viewport of a current device of a user.',
     href: 'https://photo-gallery-4caa0.web.app',
+    pdf: null,
+  },
+  {
+    id: 21,
+    image: img21,
+    title: 'Stock Portfolio App',
+    category: 'Web Development',
+    description: 'Add stocks and start visualizing your portfolio!',
+    href: 'https://stock-app-71e53.web.app',
     pdf: null,
   },
 ];
