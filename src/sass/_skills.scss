@@ -94,14 +94,14 @@
     border-top-right-radius 0.1s linear 0.1s,
     border-bottom-right-radius 0.1s linear 0.2s,
     border-bottom-left-radius 0.1s linear 0.3s;
-  i {
+  .icon {
     position: relative;
     transition: transform 0.4s linear 0s;
   }
   &:hover {
     transform: rotate(360deg);
     border-radius: 50%;
-    i {
+    .icon {
       transform: rotate(-360deg);
     }
   }

@@ -1,10 +1,13 @@
 import '../sass/_skills.scss';
+
+import { ReactComponent as FirebaseLogo } from '../assets/images/firebase-logo.svg';
+
 function Skill(props) {
   const { skill, icon, logoColor } = props;
   return (
     <>
       <div className={`${skill} skill`} style={{ backgroundColor: logoColor }}>
-        <i className={icon} />
+        <i className={`${icon} icon`} />
       </div>
     </>
   );
@@ -21,7 +24,7 @@ function Skills() {
           <div className="skills__header">
             <i className="uil uil-brackets-curly skills__icon"></i>
             <div>
-              <h1 className="skills__title">Frontend Development</h1>
+              <h1 className="skills__title">Frontend</h1>
               <span className="skills__subtitle">Self-taught</span>
             </div>
           </div>
@@ -43,12 +46,20 @@ function Skills() {
           <div className="skills__header">
             <i className="uil uil-database skills__icon"></i>
             <div>
-              <h1 className="skills__title">Backend Development</h1>
+              <h1 className="skills__title">Database</h1>
               <span className="skills__subtitle">Self-taught</span>
             </div>
           </div>
           <div className="skills__list">
-            <Skill skill="node-js" icon="fab fa-node" logoColor="#6cc24a" />
+            <div className="firebase skill">
+              <FirebaseLogo
+                style={{
+                  height: '4rem',
+                  width: '4rem',
+                }}
+                className="icon"
+              />
+            </div>
           </div>
         </div>
         {/* SKILL 3 */}
